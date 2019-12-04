@@ -1,0 +1,178 @@
+
+
+// Mopile Screen == xs
+@media (max-width: 767px) {
+  .gallery{
+    overflow: scroll;
+    button.close{
+      top: 2vh;
+      right: 140px; 
+    }
+    &_info{
+      table tr th{
+        border-top: 0;
+        display:block;
+      }
+    }
+  }
+  
+  .navbar-header {
+    float: none;
+
+    .navbar-toggle {
+      display: block;
+    }
+
+    a {
+      padding: 10px;
+    }
+  }
+
+  .nav{
+    ul li a{
+      font-size: $mediumFont !important;
+    }
+  }
+
+  .home {
+    .info {
+      margin-top: 30px;
+
+      h2 {
+        font-size: $upNormal !important;
+      }
+
+      .typed_wrap {
+        h1 {
+          font-size: $mediumFont !important;
+          margin-bottom: 10px;
+
+          span {
+            font-size: $upNormal;
+            border-bottom: 2px solid $themeColor;
+          }
+        }
+      }
+
+        p {
+          font-size: $normalFont;
+          word-spacing: 3px;
+        }
+
+        %our-btn{
+          width: 100% !important;
+        }
+
+      }
+    }
+
+  .bottom {
+    left: 15px;
+  }
+
+  .about-me{
+
+    .container .row {
+
+      .info{
+        margin: 0;
+
+        p.h1{
+          font-size: $mediumFont
+        }
+
+        h3{
+          font-size: $normalFont;
+          font-weight: 500;
+        }
+
+        table tr th{
+          display: block;
+          margin-top: 10px;
+        }
+      }
+    }
+
+  }
+
+  .flex{
+
+      justify-content: left !important;
+      align-items: left !important;
+    a{
+      width: 100% !important;
+    }
+  }
+
+  .resume{
+    .col-md-4{
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+
+  .contact{
+    .form{
+      button{
+        width: 100%;
+      }
+    }      
+  }
+  %section{
+    margin-top: 30px;
+    padding-top: 60px !important;
+  }
+}
+
+// Tablet Screen == sm
+@media (min-width: 768px) and (max-width: 1024px){
+  .gallery{
+    overflow: scroll;
+    button.close{
+      top: 2vh;
+      right: 140px; 
+    }
+    &_info{
+      table tr th{
+        border-top: 0;
+      }
+    }
+  }
+  .home{
+    p{
+      max-width: 540px;
+    }
+  }
+  %our-btn{
+    width: 40%;
+  }
+  .about-me{
+    .container .row div {
+      img{
+        padding: 0;
+        margin: 0 86px 0 auto;
+      }
+    }
+  }
+  .flex{
+    justify-content: left !important;
+    align-items: left !important
+}
+}
+
+// Laptop Screen == md
+@media (min-width: 1024px){
+  .about-me {
+    padding-top: 130px;
+    margin-top: 30px !important;
+
+    img{
+      width: 430px;
+      height: 525px;
+    }
+  }
+
+  %section{
+    padding-top: 100px !important;
+  }
+}
